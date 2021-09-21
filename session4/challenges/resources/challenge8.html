@@ -57,6 +57,27 @@
         //          Else no need to apply any styling
         //
         // HINT: Re-use your Challenge 7 code
+        for(i=0;i<friends.length;i++){
+            table_data+="<tr>";
+            for (z=0;z<friends[i].length;z++){
+                console.log(friends[i][z])
+                if(friends[i][1]=="Female"&friends[i][3]>50000){
+                    table_data +="<td class='female rich'>"+ friends[i][z] + "</td>";
+                }
+                else if(friends[i][1]=="Female"){
+                    table_data +="<td class='female'>"+ friends[i][z] + "</td>";
+                }
+                else if(friends[i][1]=="Male"&friends[i][3]>50000){
+                    table_data +="<td class='male rich'>"+ friends[i][z] + "</td>";
+                }
+                else if(friends[i][1]=="Male"){
+                    table_data +="<td class='male'>"+ friends[i][z] + "</td>";
+                }  
+                
+            }
+        }
+        table_data+="</tr>";
+
         
 
         // Once table_data is completed
