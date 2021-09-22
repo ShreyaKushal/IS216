@@ -20,8 +20,20 @@
         function convert_first_letter(str) {
             
             // YOUR CODE GOES HERE
+            var new_word=str.split(" ");
+            //console.log(new_word);
+            var new_string=" ";
+            for(ch in new_word){
+                console.log(new_word[ch]);
+                new_string+=new_word[ch].charAt(0).toUpperCase() + new_word[ch].slice(1)+" ";
+
+            }
+            return new_string;
+            
             
         }
+
+        
 
         
         // Prompt user to enter a sentence
