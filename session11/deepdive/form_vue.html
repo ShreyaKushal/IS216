@@ -27,7 +27,7 @@
 
         Your full name:
         <input type="text" name="fullname" size="40"
-            v-bind:class="[ fullname.length > 0 ? 'green' : 'red' ]"
+            v-bind:class="[ fullname.length > 0 ? 'green' : 'red' ]" <!--Dynamically determining the color-->
             v-model="fullname">
 
         <br><br>
